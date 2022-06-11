@@ -10,6 +10,8 @@ public class FileWriterExample {
 
     private static void tryWithResourcesDemo() {
 
+        //no need of closing explicitly in finally or delcaring globally
+
         try(FileWriter writer =  new FileWriter("addressFile.txt")) {
             writer.write("Hello there Catherine");
         } catch (IOException e) {
